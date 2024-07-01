@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab); /* Cambiado a tonos más oscuros */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+}
+
+main {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 1s; /* Transición para el contenido principal */
+}
+
+main.fade-in {
+    opacity: 1;
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+}
+
+.contenedor_header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.contenedor_header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+.contenedor_header h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contenedor_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor_img img {
+    width: 50%;
+    border-radius: 50%;
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.contenedor_img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el ratón */
+}
+
+.contenedor_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor_info h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor_info p, .contenedor_info ul {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.contenedor_info ul {
+    list-style-type: disc;
+    margin-top: -10px;
+}
+
+.contenedor_info li {
+    margin-bottom: 5px;
+}
+.fade-in-element ul{
+    padding: 10px;
+}

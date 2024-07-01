@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Div 2 - Abel</title>
+</head>
+<body class="img" style="background-image: url(img/circle-scatter-haikei.svg)">
+    <main class="fade-in">
+        <div class="contenedor_header fade-in-element">
+            <h1>DIVISION 2</h1>
+            <h2>ABEL FERNANDEZ PELAEZ</h2>
+        </div>
+        <div class="contenedor_img fade-in-element">
+            <img src="img/Foto_Abel_re.png" alt="Foto de Abel">
+        </div>
+        <div class="contenedor_info">
+            <div class="fade-in-element">
+                <h1><i class="fas fa-user"></i> Sobre mí</h1>
+                <p>Llevo más de 6 meses en Promart, soy consultor de ventas part time, disfruto atender a los clientes con trato experto y el buen clima laboral.</p>
+            </div>
+            <div class="fade-in-element">
+                <h1><i class="fas fa-graduation-cap"></i> Carrera</h1>
+                <p>Ingeniería de Sistemas</p>
+            </div>
+            <div class="fade-in-element">
+                <h1><i class="fas fa-trophy"></i> Logros Destacados</h1>
+                <ul>
+                    <li>Quedé top 1 a nivel de mi división en ventas.</li>
+                    <li>Obtuve reconocimientos por parte de clientes y mi subgerente.</li>
+                </ul>
+            </div>
+            <div class="fade-in-element">
+                <h1><i class="fas fa-lightbulb"></i> Aptitudes</h1>
+                <ul>
+                    <li>Amable</li>
+                    <li>Atento</li>
+                    <li>Respetuoso</li>
+                </ul>
+            </div>
+            <div class="fade-in-element">
+                <h1><i class="fas fa-futbol"></i> Intereses Personales</h1>
+                <p>Fútbol</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('fade-in');
+            document.querySelector('main').classList.add('fade-in');
+            
+            const elements = document.querySelectorAll('.fade-in-element');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 500); // Ajusta el tiempo según prefieras
+            });
+        });
+    </script>
+</body>
+</html>
